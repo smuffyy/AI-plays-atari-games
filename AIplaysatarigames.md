@@ -1,5 +1,5 @@
 # AI-plays-atari-games
-## Introduction
+# Introduction
 
 Welcome to the AI Playing Atari Classics project! This repository showcases an implementation of an AI system that learns to play classic Atari games using reinforcement learning techniques, specifically **Space invaders** and **Pong**. The goal of this project is to develop an intelligent agent capable of achieving high scores and demonstrating proficient gameplay in a variety of Atari classics.
 
@@ -7,7 +7,7 @@ By leveraging the power of deep learning and reinforcement learning algorithms, 
 
 Feel free to explore the code, experiment with different settings, and observe the agent's learning process. The repository provides tools for training the AI agent, monitoring its progress, and evaluating its gameplay. Additionally, contributions from the community are welcomed to further enhance and expand the project.
 
-## Atari Games Overview
+# Atari Games Overview
 
 Atari games hold a significant place in the history of video games, having pioneered the industry and captivated audiences during the early years of gaming. Atari, founded in 1972, played a vital role in shaping the landscape of interactive entertainment.
 
@@ -24,7 +24,7 @@ So, let's dive into the world of Atari games and witness the evolution of an AI 
 ![atari](https://github.com/smuffyy/AI-plays-atari-games/assets/96169914/59d568e8-ea95-48db-8612-a7f56f27676b)
 
 
-## Requirements
+# Requirements
 
 1. Python 3.x
 
@@ -32,16 +32,16 @@ So, let's dive into the world of Atari games and witness the evolution of an AI 
 
 3. TensorFlow and TF-Agents: Install the required dependencies by running pip install tf-agents
 
-## Getting Started
+# Getting Started
 1. Clone the repository: git clone https://github.com/smuffyy/AI-plays-atari-games.git
 2. Install the dependencies mentioned in the Requirements section.
 3. Run the code: main.py
 
-## Code
+# Code
 
 we begin by importing the required python dependencies
 
-## Importing dependencies
+# Importing dependencies
 ```
 import gym
 import matplotlib.pyplot as plt
