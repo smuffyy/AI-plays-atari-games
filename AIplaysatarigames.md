@@ -1,5 +1,5 @@
 # AI-plays-atari-games
-## INTRODUCTION
+## Introduction
 
 Welcome to the AI Playing Atari Classics project! This repository showcases an implementation of an AI system that learns to play classic Atari games using reinforcement learning techniques, specifically **Space invaders** and **Pong**. The goal of this project is to develop an intelligent agent capable of achieving high scores and demonstrating proficient gameplay in a variety of Atari classics.
 
@@ -21,7 +21,7 @@ Through this AI project, we aim to harness the capabilities of modern machine le
 
 So, let's dive into the world of Atari games and witness the evolution of an AI agent that conquers these beloved classics!
 
-![atari](https://github.com/smuffyy/AI-plays-Atari-classics---reinforcement-learning/assets/136073275/b8141b68-ee06-49f1-8018-06e56171e0dd)
+![atari](https://github.com/smuffyy/AI-plays-atari-games/assets/96169914/59d568e8-ea95-48db-8612-a7f56f27676b)
 
 
 ## Requirements
@@ -76,7 +76,7 @@ The max_episode_steps variable determines the maximum number of steps per episod
 Additionally, the gym_env_wrappers argument specifies the preprocessing wrappers to be applied to the environment, including AtariPreprocessing and FrameStack4.
 
 ```
-max_episode_steps = 50000 # <=> 108k ALE frames since 1 step = 4 frames
+max_episode_steps = 50000 
 environment_name = "SpaceInvaders-v4"
 env = suite_atari.load(
     environment_name,
@@ -148,6 +148,7 @@ Output Layer:
 
 The final fully connected layer produces Q-values for each possible action, indicating the estimated expected rewards for taking those actions.
 By combining convolutional layers for feature extraction and fully connected layers for decision-making, the DQN model learns to approximate the optimal action-value function and make informed decisions while playing Atari games
+
 ## Define the model architecture
 define the model architecture for the Q-network.
 It uses a preprocessing layer to normalize the observations, followed by convolutional layers and fully connected layers. 
@@ -343,13 +344,13 @@ def plot_animation(frames, repeat=False, interval=40):
 ### Plot and display the animation
 plot_animation(frames)
 ```
-
-![myAgentPlaysSpaceInvaders-Best](https://github.com/smuffyy/AI-plays-Atari-classics---reinforcement-learning/assets/136073275/97c54b7a-708e-4ede-b7e4-5923ab33b415)
+![myAgentPlaysSpaceInvaders-Best](https://github.com/smuffyy/AI-plays-atari-games/assets/96169914/97b405fc-8e91-47cc-a020-ac2782afbd8e)
 
 ## Save the trained model
-
+```
 saved_model_path = "./saved_model"
 tf.saved_model.save(agent.policy, saved_model_path)
+```
 
 ## define a function to take checkppoints and compute the average
 Define a function compute_long_run_average_return() that takes a list of checkpoint steps as input. It iterates over each checkpoint step and performs data collection using the collect_driver. 
@@ -384,13 +385,15 @@ plt.title('Long-Run Average Discounted Reward at Checkpoints')
 plt.tight_layout()
 plt.show()
 ```
-![trainingCurve-SpaceInvaders](https://github.com/smuffyy/AI-plays-Atari-classics---reinforcement-learning/assets/136073275/182ef070-bb5c-43e7-8544-c0fe1266532b)
+![trainingCurve-SpaceInvaders](https://github.com/smuffyy/AI-plays-atari-games/assets/96169914/7f4c95fc-7bde-4b87-9559-f1dd39277c0b)
 
 # License
 The code in this repository is licensed under the MIT License
 
 # Authors 
 This article and code has been co-authored and co-developed by
-Jesika Davidson and Harinandan Rajkishor
-LinkedIn: https://www.linkedin.com/in/jesika-davidson-8146831b7/
+Harinandan Rajkishor and Jesika Davidson
+
+LinkedIn: https://www.linkedin.com/in/harinandan-rajkishor/
+
 Email: jesikadavidson8@gmail.com
