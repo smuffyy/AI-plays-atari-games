@@ -97,7 +97,7 @@ time_step = env.step(np.array(1))
 for _ in range(4):
     time_step = env.step(np.array(3))  
 ```
-# Define a function to plot and display game observations
+## Define a function to plot and display game observations
 define the plot_observation() function, which takes an observation from the game and plots it. The code then uses this function to plot and display the initial observation.
 ```
 def plot_observation(obs):
