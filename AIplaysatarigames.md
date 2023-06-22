@@ -396,4 +396,4 @@ Harinandan Rajkishor and Jesika Davidson
 
 LinkedIn: https://www.linkedin.com/in/harinandan-rajkishor/
 
-Email: jesikadavidson8@gmail.com
+Email: harinandanrajkishor@gmail.com
